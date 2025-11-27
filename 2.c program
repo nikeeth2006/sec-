@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+// Function to add two numbers
+float add_numbers(float a, float b) {
+    return a + b;
+}
+
+int main() {
+    // Example 1: Adding two numbers directly
+    float num1 = 10.5;
+    float num2 = 20.3;
+    float result = add_numbers(num1, num2);
+    printf("Example 1: The sum of %.2f and %.2f is: %.2f\n", num1, num2, result);
+
+    // Example 2: Adding numbers entered by the user
+    float user_num1, user_num2;
+    printf("\nEnter the first number: ");
+    scanf("%f", &user_num1);  // Input for first number
+    printf("Enter the second number: ");
+    scanf("%f", &user_num2);  // Input for second number
+
+    result = add_numbers(user_num1, user_num2);
+    printf("Example 2: The sum of %.2f and %.2f is: %.2f\n", user_num1, user_num2, result);
+
+    return 0;
+}
